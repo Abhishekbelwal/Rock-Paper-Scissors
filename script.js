@@ -17,12 +17,12 @@ const showWinner=(userWin, userChoice, compChoice)=>{
     if (userWin) {
         userScore++;
         userscorepara.innerText=userScore;
-        msg.innerText=`You Win! Your ${userChoice} beats ${compChoice}`;
+        msg.innerText=`Human's brain Wins! Your ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor="Green";
     }else{
         compScore++;
         compscorepara.innerText=compScore;
-         msg.innerText=`You Win! Comp ${compChoice} beats your ${userChoice}`;
+         msg.innerText=`Machine's Brain Wins! Comp ${compChoice} beats your ${userChoice}`;
           msg.style.backgroundColor="Red";
         
     }

@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    box-sizing: border-box; /* Elements ko break hone se rokne ke liye */
+    background-color: antiquewhite;
+    box-sizing: border-box; 
 }
 
 h1 {
@@ -15,41 +16,33 @@ h1 {
 .choices {
     display: flex;
     justify-content: center;
-    align-items: center;     /* Images ko vertical center karega */
+    align-items: center;     
     gap: 7rem;
     height: 300px;
-    background-color: lightblue;
+    background-color: blue ;
     margin-top: 3rem;
 }
 
-/* 1. Normal State: Jab images aaram se rkhi hain */
 .choice {
     height: 165px;
     width: 165px;
     border-radius: 50%;
     
-    /* Smooth Pop-out animation timeline */
     transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
-    
-    /* Light shadow when resting */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
 }
 
-/* 2. Hover State: Jab mouse image par aayega (Pop-out Effect) */
 .choice:hover {
     cursor: pointer;
-    transform: scale(1.18) translateY(-18px); /* Screen se bahar nikalne ka effect */
-    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.45); /* Deep shadow for 3D depth */
+    transform: scale(1.18) translateY(-18px); 
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.45); 
 }
 
-/* 3. Actual Image Styles inside the choice div */
 .choice img {
     height: 100%;
     width: 100%;
     object-fit: contain;
     border-radius: 50%;
-    
-    /* Scissors ka white background transparent karne ke liye */
     mix-blend-mode: multiply; 
 }
 
@@ -58,7 +51,7 @@ h1 {
     justify-content: center;
     gap: 5rem;
     font-size: 2rem;
-    margin-top: 2rem; /* Scoreboard ko thoda niche space dene ke liye */
+    margin-top: 2rem; 
 }
 
 
